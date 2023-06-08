@@ -2,14 +2,17 @@ import React from 'react'
 import "./css/navbar.css"
 
 function Navbar() {
+
+  function ifInApp() { return (window.location.href != `http://${window.location.host}/estimator` ? <a href="/estimator">
+  <button>Try now</button></a> : null )
+
+}
   return (
     <div className='navbar'>
-        <div>
+        <a href='/'>
             <h1 className='title'>Estimator<span>Hero</span></h1>
-        </div>
-        <div>
-            <button>Try now</button>
-        </div>
+        </a>
+       {ifInApp()}
     </div>
   )
 }
