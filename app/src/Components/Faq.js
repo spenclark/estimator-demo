@@ -11,22 +11,24 @@ const data = [
     },
     {
         id: 3,
-        body: "Unlock valubale insights and metrics to help you understand your bids competitiveness -- for free"
+        body: "Unlock valubale insights and metrics to help you understand your bids competitiveness -- for free."
     }
 ]
 
 function Faq() {
   return (
-    <div>
-        <div className=''>How it works</div>
-        <div>
+    <div className='parent'>
+        <div className='faq_title'>How it works</div>
+        <div className='card_parent'>
             {data.map((i) => {
                 return (
-                <div id={i.id}>
-                    <div>
+                <div className="card" id={i.id}>
+                    <div className='order_roundel'>
+                       <div>
                         {i.id}
+                        </div>
                     </div>
-                    <div>
+                    <div className='card_body'>
                         {i.body}
                     </div>
                 </div>

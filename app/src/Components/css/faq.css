@@ -1,19 +1,80 @@
 .parent {
-
+    width: 70%;
+    margin: auto;
 }
 
-.title {
-
+.faq_title {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 0
 }
+
+.card_parent {
+ display: flex;
+ justify-content: space-between;
+}
+
 
 .card {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(224, 224, 224);
+    background: rgb(224, 224, 224);
+    border-radius: 4px;
+    margin: 3px;
+    height: auto;
+    padding: 5px;
 }
 
 .order_roundel {
-
+    font-size: 9px;
+    display: flex;
+    font-weight: 700;
+    color: white;
+    background: #333;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 5px !important;
+    margin: auto 0;
 }
 
+
 .card_body {
+    line-height: 1.1;
+    font-size: 14px;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 728px) {
+    .parent { 
+        width: 90%;
+        margin: 0
+    }
+    .faq_title {
+        text-align: center;
+    }
+    .card_parent {
+        display: flex;
+        flex-direction: column;
+       }
+       .card {
+        flex-direction: column;
+        text-align: center;
+        margin:  6px 0;
+        padding: 5px; 
+       }
+       .order_roundel {
+        font-size: 11;
+        margin: 2px auto !important;
+        width: 22px;
+        height: 22px;
+        
+        }
     
 }
