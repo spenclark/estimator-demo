@@ -34,12 +34,12 @@ function Form() {
 
       <div className="form-group">
         <label>Total Cost: </label>
-        <output>{totalCost}</output>
+        <output style={{fontWeight: "600"}}>${totalCost.toFixed(2)}</output>
       </div>
 
       <div className="form-group">
         <label>Cost per Sq. Ft.: </label>
-        <output min="1">{costPerSqFt}</output>
+        <output style={{fontWeight: "600"}} min="1">${costPerSqFt.toFixed(2)}</output>
       </div>
     </form>
   );

@@ -1,9 +1,9 @@
 /* Form.css */
 
 .form-stripe {
-    width: 60%;
+    width: 90%;
     font-family: Arial, sans-serif;
-    min-width: 300px
+   max-width: 300px
 }
 
 .form-group {
