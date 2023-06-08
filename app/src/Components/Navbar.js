@@ -1,10 +1,11 @@
 import React from 'react'
+import "./css/navbar.css"
 
 function Navbar() {
   return (
-    <div>
+    <div className='navbar'>
         <div>
-            <h1>EstimatorHero</h1>
+            <h1 className='title'>Estimator<span>Hero</span></h1>
         </div>
         <div>
             <button>Try now</button>
